@@ -25,11 +25,9 @@ namespace WindowsFormsApp1
         private void button1_MouseEnter(object sender, EventArgs e)
         {
             Random random = new Random();
-            int Counter = 0;
             do
             {
-                Counter++;
-                if (Counter == 100)
+                if (this.Width <= button1.Width + 100 && this.Height <= button1.Height + 100)
                 {
                     MessageBox.Show("You caught me =)");
                     this.Close();
@@ -88,6 +86,12 @@ namespace WindowsFormsApp1
                     continue;
                 }
             } while (true);
+        }
+
+        private void button1_MouseClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("How did you do that?" , "" , MessageBoxButtons.OK, MessageBoxIcon.Question);
+            this.Close();
         }
     }
 }

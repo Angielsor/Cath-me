@@ -40,6 +40,7 @@ namespace WindowsFormsApp1
             this.button1.TabIndex = 0;
             this.button1.Text = "Catch me";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             // 
             // Form1
